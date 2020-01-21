@@ -19,7 +19,7 @@ package com.course.msscorderservice.services;
 
 import com.course.msscorderservice.domain.BeerOrder;
 import com.course.msscorderservice.domain.Customer;
-import com.course.msscorderservice.domain.OrderStatusEnum;
+import com.course.msscorderservice.domain.BeerOrderStatusEnum;
 import com.course.msscorderservice.repositories.BeerOrderRepository;
 import com.course.msscorderservice.repositories.CustomerRepository;
 import com.course.msscorderservice.web.mappers.BeerOrderMapper;
@@ -84,7 +84,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
             BeerOrder beerOrder = beerOrderMapper.dtoToBeerOrder(beerOrderDto);
             beerOrder.setId(null); //should not be set by outside client
             beerOrder.setCustomer(customerOptional.get());
-            beerOrder.setOrderStatus(OrderStatusEnum.NEW);
+            beerOrder.setOrderStatus(BeerOrderStatusEnum.NEW);
 
             beerOrder.getBeerOrderLines().forEach(line -> line.setBeerOrder(beerOrder));
 
@@ -109,7 +109,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
     @Override
     public void pickupOrder(UUID customerId, UUID orderId) {
         BeerOrder beerOrder = getOrder(customerId, orderId);
-        beerOrder.setOrderStatus(OrderStatusEnum.PICKED_UP);
+        beerOrder.setOrderStatus(BeerOrderStatusEnum.PICKED_UP);
 
         beerOrderRepository.save(beerOrder);
     }
