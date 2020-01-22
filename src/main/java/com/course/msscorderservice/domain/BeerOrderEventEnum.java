@@ -1,6 +1,6 @@
 package com.course.msscorderservice.domain;
 
-public enum BeerOrderEvents {
+public enum BeerOrderEventEnum {
     VALIDATE_ORDER,
     VALIDATION_PASSED,
     VALIDATION_FAILED,
