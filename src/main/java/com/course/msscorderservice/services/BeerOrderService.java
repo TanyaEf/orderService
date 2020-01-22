@@ -18,8 +18,8 @@
 package com.course.msscorderservice.services;
 
 
-import com.course.msscorderservice.web.model.BeerOrderDto;
-import com.course.msscorderservice.web.model.BeerOrderPagedList;
+import com.course.msscorderservice.brewery.model.BeerOrderDto;
+import com.course.msscorderservice.brewery.model.BeerOrderPagedList;
 import org.springframework.data.domain.Pageable;
 
 import java.util.UUID;

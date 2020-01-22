@@ -15,37 +15,27 @@
  *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.course.msscorderservice.web.model;
+package com.course.msscorderservice.brewery.model;
 
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-public class BeerOrderLineDto extends BaseItem {
+public class CustomerDto extends BaseItem {
 
     @Builder
-    public BeerOrderLineDto(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate,
-                            String upc, String beerName, String beerStyle, UUID beerId, Integer orderQuantity,
-                            BigDecimal price) {
+    public CustomerDto(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate, String name) {
         super(id, version, createdDate, lastModifiedDate);
-        this.upc = upc;
-        this.beerName = beerName;
-        this.beerId = beerId;
-        this.orderQuantity = orderQuantity;
+        this.name = name;
     }
 
-    private String upc;
-    private String beerName;
-    private String beerStyle;
-    private UUID beerId;
-    private Integer orderQuantity = 0;
-    private BigDecimal price;
+    private String name;
+
 }

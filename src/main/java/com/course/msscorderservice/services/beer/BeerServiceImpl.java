@@ -1,6 +1,6 @@
 package com.course.msscorderservice.services.beer;
 
-import com.course.msscorderservice.web.model.BeerDto;
+import com.course.msscorderservice.brewery.model.BeerDto;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.stereotype.Service;

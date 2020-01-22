@@ -18,7 +18,7 @@
 package com.course.msscorderservice.web.mappers;
 
 import com.course.msscorderservice.domain.BeerOrder;
-import com.course.msscorderservice.web.model.BeerOrderDto;
+import com.course.msscorderservice.brewery.model.BeerOrderDto;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 

@@ -18,8 +18,8 @@
 package com.course.msscorderservice.web.controllers;
 
 import com.course.msscorderservice.services.BeerOrderService;
-import com.course.msscorderservice.web.model.BeerOrderDto;
-import com.course.msscorderservice.web.model.BeerOrderPagedList;
+import com.course.msscorderservice.brewery.model.BeerOrderDto;
+import com.course.msscorderservice.brewery.model.BeerOrderPagedList;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

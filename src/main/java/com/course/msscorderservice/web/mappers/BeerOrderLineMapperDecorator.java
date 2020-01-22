@@ -2,8 +2,8 @@ package com.course.msscorderservice.web.mappers;
 
 import com.course.msscorderservice.domain.BeerOrderLine;
 import com.course.msscorderservice.services.beer.BeerService;
-import com.course.msscorderservice.web.model.BeerDto;
-import com.course.msscorderservice.web.model.BeerOrderLineDto;
+import com.course.msscorderservice.brewery.model.BeerDto;
+import com.course.msscorderservice.brewery.model.BeerOrderLineDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 

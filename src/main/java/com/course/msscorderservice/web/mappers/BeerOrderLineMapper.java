@@ -1,7 +1,7 @@
 package com.course.msscorderservice.web.mappers;
 
 import com.course.msscorderservice.domain.BeerOrderLine;
-import com.course.msscorderservice.web.model.BeerOrderLineDto;
+import com.course.msscorderservice.brewery.model.BeerOrderLineDto;
 import org.mapstruct.DecoratedWith;
 import org.mapstruct.Mapper;
 

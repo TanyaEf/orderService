@@ -1,4 +1,4 @@
-package com.course.msscorderservice.web.model;
+package com.course.msscorderservice.brewery.model;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
